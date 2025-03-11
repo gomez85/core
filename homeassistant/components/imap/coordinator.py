@@ -178,6 +178,9 @@ class ImapMessage:
         """Get the message text from the email.
 
         Will look for text/plain or use/ text/html if not found.
+
+        Could the user be given the choice to evaluate the html part first rather than the plan part?
+        
         """
         message_text: str | None = None
         message_html: str | None = None
